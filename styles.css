@@ -1,2 +1,26 @@
 
 /* Your CSS Code here. */
+/* Container for the items */
+.holder {
+  display: flex;                /* Enables Flexbox */
+  justify-content: space-between; /* Distributes items evenly with space between */
+  flex-wrap: wrap;               /* Allows items to wrap onto the next row */
+  padding: 0;                    /* No padding around the container */
+  margin: 0;                     /* No margin around the container */
+  list-style-type: none;         /* Removes bullet points if using <ul> */
+}
+
+/* Individual items */
+.item {
+  flex: 0 1 calc(33.33% - 20px); /* Allows the item to grow/shrink while maintaining 33.33% width and accounting for the gap */
+  margin-bottom: 20px;           /* Spacing between rows */
+}
+
+/* Add some styling to make items visible */
+.item {
+  background-color: lightgray;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-sizing: border-box;        /* Ensures padding and border are included in the width */
+}
